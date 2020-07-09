@@ -1,4 +1,4 @@
-# Code formatter string splitter
+# Code Formatter - String Splitter
 
 Simple C Program that helps with code formatting when using strings.
 It splits long strings in multiple lines seperated by a plus.
