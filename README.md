@@ -3,17 +3,43 @@
 Simple C Program that helps with code formatting when using strings.
 It splits long strings in multiple lines seperated by a plus.
 
-Note: I know this could be done better with using command line arguments. Will be implemented later ;)
+Problem:
+```
+String longString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim diam vulputate ut pharetra sit amet aliquam id. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Fusce";
+```
+With help of string_splitter.c:
+```
+String longString = "Lorem ipsum dolor sit amet, c"+
+    "onsectetur adipiscing elit, s"+
+    "ed do eiusmod tempor incididu"+
+    "nt ut labore et dolore magna "+
+    "aliqua. Libero id faucibus ni"+
+    "sl tincidunt eget nullam non."+
+    " Vulputate sapien nec sagitti"+
+    "s aliquam malesuada bibendum "+
+    "arcu vitae. Egestas";
+```
 
-## Example
-1. Dummy example
+## Examples
+1. Quickstart
   ```
   $ ./split_string "The string you would like to split"
   "The string you would like to "+
   "split"
   ```
-
-2. Useful for long hex strings for example
+2. Using additional argument to adjust length of the substrings
+  ```
+  $ ./split_string -l 5 "The string you would like to split"
+  "The s"+
+  "tring"+
+  " you "+
+  "would"+
+  " like"+
+  " to s"+
+  "plit"
+   "split"
+  ```
+3. Useful for long hex strings
   ```
 $ ./split_string 05fa00020626000000000002000310001300011000080001020900020b000000000000000000030b000000000000000000040b00000000000000000005020000061b0001000000000000000000071200010000080400000210000400010208000202010003020000040400000310000700010209000202280003020000040208000512001400141e28323c4b5a0000000000000000000000000006120014020000000000000000000000000000000000000000070402000510000700010209000202a0000302000004020500051200145064788ca00000000000000000000000000000000006120014000000000000000000000000000000000000000000070400000610000500010200000202000003020000041200050000000000000504000007100005000102000002020000030200000412000500000000000005040000081000050001020900020200000302040004120005000103020000050400000b10000500010200
 "05fa0002062600000000000200031"+
@@ -45,8 +71,7 @@ $ ./split_string 05fa00020626000000000002000310001300011000080001020900020b00000
 
 ## Usage
 
-1. (Optional) Configure the SPLIT_AT variable to the length you want the seperated strings to be
-2. Compile
+1. Compile
   ```
   make string_splitter
   ```
@@ -54,36 +79,11 @@ $ ./split_string 05fa00020626000000000002000310001300011000080001020900020b00000
   ```
   cc string_splitter.c -o string_splitter
   ```
-3. Run :)
+2. Run :)
   ```
   ./string_splitter "<the_string_you_would_like_to_split>"
   ```
-
-## Supported Languages
-- Java
-```
-String longString = "Lorem ipsum dolor sit amet, c"+
-    "onsectetur adipiscing elit, s"+
-    "ed do eiusmod tempor incididu"+
-    "nt ut labore et dolore magna "+
-    "aliqua. Libero id faucibus ni"+
-    "sl tincidunt eget nullam non."+
-    " Vulputate sapien nec sagitti"+
-    "s aliquam malesuada bibendum "+
-    "arcu vitae. Egestas fringilla"+
-    " phasellus faucibus scelerisq"+
-    "ue eleifend. Velit scelerisqu"+
-    "e in dictum non consectetur a"+
-    ". Orci porta non pulvinar neq"+
-    "ue laoreet suspendisse. Arcu "+
-    "felis bibendum ut tristique e"+
-    "t egestas quis ipsum suspendi"+
-    "sse. In fermentum posuere urn"+
-    "a nec tincidunt praesent semp"+
-    "er. Velit aliquet sagittis id"+
-    " consectetur purus ut. Placer"+
-    "at orci nulla pellentesque di"+
-    "gnissim.";
-```
-- C
-- ...
+  or with additional argument -l
+  ```
+  ./string_splitter -l <length_of_the_substrings> "<the_string_you_would_like_to_split>"
+  ```
