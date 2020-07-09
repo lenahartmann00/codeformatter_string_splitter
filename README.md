@@ -3,11 +3,11 @@
 Simple C Program that helps with code formatting when using strings.
 It splits long strings in multiple lines seperated by a plus.
 
-Problem:
+Problem :(
 ```
 String longString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim diam vulputate ut pharetra sit amet aliquam id. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Fusce";
 ```
-With help of string_splitter.c:
+using <b>string_splitter.c</b> :)
 ```
 String longString = "Lorem ipsum dolor sit amet, c"+
     "onsectetur adipiscing elit, s"+
@@ -19,6 +19,25 @@ String longString = "Lorem ipsum dolor sit amet, c"+
     "s aliquam malesuada bibendum "+
     "arcu vitae. Egestas";
 ```
+
+## Usage
+
+1. Compile
+      ```
+      make string_splitter
+      ```
+      or 
+      ```
+      cc string_splitter.c -o string_splitter
+      ```
+2. Run :)
+      ```
+      ./string_splitter "<the_string_you_would_like_to_split>"
+      ```
+      or with optional argument -l
+      ```
+      ./string_splitter -l <length_of_the_substrings> "<the_string_you_would_like_to_split>"
+      ```
 
 ## Examples
 1. Quickstart
@@ -67,23 +86,4 @@ $ ./split_string 05fa00020626000000000002000310001300011000080001020900020b00000
 "00081000050001020900020200000"+
 "30204000412000500010302000005"+
 "0400000b10000500010200"
-  ```
-
-## Usage
-
-1. Compile
-  ```
-  make string_splitter
-  ```
-  or 
-  ```
-  cc string_splitter.c -o string_splitter
-  ```
-2. Run :)
-  ```
-  ./string_splitter "<the_string_you_would_like_to_split>"
-  ```
-  or with additional argument -l
-  ```
-  ./string_splitter -l <length_of_the_substrings> "<the_string_you_would_like_to_split>"
   ```
