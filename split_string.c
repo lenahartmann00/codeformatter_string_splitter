@@ -15,7 +15,7 @@ int main (int argc, char * argv[]) {
     if(argc == 2) {
         substring_length = DEFAULT_SUBSTRING_LENGTH;
         user_text = argv[1];
-    } else if (argc == 4 && strcmp(argv[1], "-l") == 0) {
+    } else if (argc == 4 && strncmp(argv[1], "-l") == 0) {
         substring_length = atoi(argv[2]);
         user_text = argv[3];
     } else {
