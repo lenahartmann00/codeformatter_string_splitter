@@ -62,7 +62,7 @@ $ ./split_string 05fa00020626000000000002000310001300011000080001020900020b00000
 ## Supported Languages
 - Java
 ```
-String long_string = "Lorem ipsum dolor sit amet, c"+
+String longString = "Lorem ipsum dolor sit amet, c"+
     "onsectetur adipiscing elit, s"+
     "ed do eiusmod tempor incididu"+
     "nt ut labore et dolore magna "+
