@@ -83,7 +83,7 @@ String long_string = "Lorem ipsum dolor sit amet, c"+
     "er. Velit aliquet sagittis id"+
     " consectetur purus ut. Placer"+
     "at orci nulla pellentesque di"+
-    "gnissim."
+    "gnissim.";
 ```
 - C
 - ...
