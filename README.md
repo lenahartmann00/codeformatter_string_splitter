@@ -3,11 +3,11 @@
 Simple C Program that helps with code formatting when using strings.
 It splits long strings in multiple lines seperated by a plus.
 
-Problem :(
+### Problem :(
 ```
 String longString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim diam vulputate ut pharetra sit amet aliquam id. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Fusce";
 ```
-using <b>string_splitter.c</b> :)
+### Solution :) - <b>string_splitter.c</b>
 ```
 String longString = "Lorem ipsum dolor sit amet, c"+
     "onsectetur adipiscing elit, s"+
@@ -30,7 +30,7 @@ String longString = "Lorem ipsum dolor sit amet, c"+
       ```
       cc string_splitter.c -o string_splitter
       ```
-2. Run :)
+2. Run
       ```
       ./string_splitter "<the_string_you_would_like_to_split>"
       ```
