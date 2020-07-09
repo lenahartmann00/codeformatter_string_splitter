@@ -22,15 +22,19 @@ String longString = "Lorem ipsum dolor sit amet, c"+
 
 ## Usage
 
-1. Compile
+1. Get string_splitter.c
+      ```
+      wget https://raw.githubusercontent.com/lenahartmann00/codeformatter_string_splitter/master/split_string.c
+      ```
+2. Compile
       ```
       make string_splitter
       ```
       or 
       ```
-      cc string_splitter.c -o string_splitter
+      gcc string_splitter.c -o string_splitter
       ```
-2. Run
+3. Run
       ```
       ./string_splitter "<the_string_you_would_like_to_split>"
       ```
