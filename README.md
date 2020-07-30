@@ -50,7 +50,7 @@ String longString = "Lorem ipsum dolor sit amet, c"+
   "The string you would like to "+
   "split"
   ```
-2. Using additional argument to adjust length of the substrings
+2. Using additional argument to adjust the length of the substrings
   ```
   $ ./split_string -l 5 "The string you would like to split"
   "The s"+
